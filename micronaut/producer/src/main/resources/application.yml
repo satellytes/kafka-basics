@@ -1,0 +1,4 @@
+micronaut:
+  application:
+    name: kafkaproducer
+kafka.bootstrap.servers: localhost:9093
