@@ -42,15 +42,14 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter-api")
     testImplementation("io.micronaut.test:micronaut-test-junit5")
     testImplementation("org.assertj:assertj-core:3.11.1")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+
+    //TestContainers
     testImplementation("org.testcontainers:testcontainers:1.14.3")
     testImplementation("org.testcontainers:junit-jupiter:1.14.3")
     testImplementation("org.testcontainers:kafka:1.14.3")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
 
-    //Embedded Kafka
-    testImplementation 'org.apache.kafka:kafka-clients:2.5.0:test'
-    testImplementation 'org.apache.kafka:kafka_2.12:2.5.0'
-    testImplementation 'org.apache.kafka:kafka_2.12:2.5.0:test'
+
 }
 
 test.classpath += configurations.developmentOnly
