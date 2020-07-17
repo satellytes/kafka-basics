@@ -1,8 +1,6 @@
-package com.satellytes.wombat.controller
+package com.satellytes.kafkaproducer.controller
 
 import io.micronaut.http.HttpStatus
-import io.micronaut.http.annotation.Get
-import io.micronaut.http.annotation.PathVariable
 import io.micronaut.http.annotation.Post
 import io.micronaut.http.client.annotation.Client
 import javax.inject.Singleton
@@ -14,7 +12,4 @@ interface WombatClient {
 
     @Post("/hug/{name}")
     fun giveAHug(@NotBlank name : String) : HttpStatus
-
-    @Post("/pad/{name}")
-    fun giveAPad(@NotBlank name : String) : HttpStatus
 }

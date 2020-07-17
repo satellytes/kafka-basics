@@ -1,4 +1,4 @@
-package com.satellytes.wombat.model
+package com.satellytes.kafkaproducer.model
 
 import java.util.*
 

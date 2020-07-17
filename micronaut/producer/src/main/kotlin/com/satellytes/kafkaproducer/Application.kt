@@ -1,4 +1,4 @@
-package com.satellytes.wombat
+package com.satellytes.kafkaproducer
 
 import io.micronaut.runtime.Micronaut.*
 

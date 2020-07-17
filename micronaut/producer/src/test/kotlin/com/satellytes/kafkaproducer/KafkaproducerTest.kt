@@ -1,4 +1,4 @@
-package com.satellytes.wombat
+package com.satellytes.kafkaproducer
 import io.micronaut.runtime.EmbeddedApplication
 import io.micronaut.test.annotation.MicronautTest
 import org.junit.jupiter.api.Assertions

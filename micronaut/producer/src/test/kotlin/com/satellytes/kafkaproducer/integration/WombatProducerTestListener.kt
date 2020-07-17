@@ -1,14 +1,12 @@
-package com.satellytes.wombat.integration
+package com.satellytes.kafkaproducer.integration
 
-import com.satellytes.wombat.model.WombatHuggedEvent
+import com.satellytes.kafkaproducer.model.WombatHuggedEvent
 import io.micronaut.configuration.kafka.annotation.KafkaListener
 import io.micronaut.configuration.kafka.annotation.Topic
-import io.micronaut.context.annotation.Bean
 import java.util.concurrent.BlockingQueue
 import java.util.concurrent.LinkedBlockingDeque
 import javax.inject.Singleton
 
-@Singleton
 @KafkaListener
 class WombatProducerTestListener {
 

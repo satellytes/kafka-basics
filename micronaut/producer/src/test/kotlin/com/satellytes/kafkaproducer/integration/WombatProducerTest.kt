@@ -1,7 +1,7 @@
-package com.satellytes.wombat.integration
+package com.satellytes.kafkaproducer.integration
 
-import com.satellytes.wombat.WombatProducer
-import com.satellytes.wombat.model.WombatHuggedEvent
+import com.satellytes.kafkaproducer.WombatProducer
+import com.satellytes.kafkaproducer.model.WombatHuggedEvent
 import io.micronaut.test.annotation.MicronautTest
 import io.micronaut.test.support.TestPropertyProvider
 import org.assertj.core.api.Assertions.assertThat
@@ -15,7 +15,7 @@ import javax.inject.Inject
 
 @TestInstance(value = TestInstance.Lifecycle.PER_CLASS)
 @MicronautTest
-class WombatProducerIT : TestPropertyProvider {
+class WombatProducerTest : TestPropertyProvider {
 
     private val WOMBAT_NAME = "any Name"
 
